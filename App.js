@@ -26,7 +26,7 @@ function HomeScreen({ navigation }) {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="TelaTurmas">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name="TelaTurmas" component={TelaTurmas} options={{ headerShown: false }} />
       </Stack.Navigator>
