@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, Image, ActivityIndicator, TouchableOpacity, ImageBackground} from 'react-native';
+import { View, Text, FlatList, Image, ActivityIndicator, TouchableOpacity, ImageBackground, RefreshControl} from 'react-native';
 import { styles } from './TelaTurmasstyles';
 import { Header, Footer } from '../../imports/import';
 
 const TelaTurmas = () => {
   const [turmas, setTurmas] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = React.useState(false);
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     fetch('https://back-end-mediotec.onrender.com/api/turmas')
@@ -13,16 +21,15 @@ const TelaTurmas = () => {
       .then(data => {
         const sortedData = data.sort((a, b) => a.nome.localeCompare(b.nome));
         setTurmas(sortedData);
-        setLoading(false); // Defina o carregamento como falso após obter os dados
+        setLoading(false);
       })
       .catch(error => {
         console.error('Error fetching turmas:', error);
-        setLoading(false); // Defina o carregamento como falso mesmo em caso de erro
+        setLoading(false);
       });
   }, []);
 
   const renderTurma = ({ item }) => {
-    // Supondo que item.professores e item.alunos sejam arrays
     const totalPessoas = item.professores.length + item.alunos.length;
 
     return (
@@ -67,6 +74,9 @@ const TelaTurmas = () => {
           keyExtractor={(item, index) => item.id ? item.id.toString() : index.toString()}
           numColumns={2}
           contentContainerStyle={styles.listContainer}
+          refreshControl={
+            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+          }
         />
       )}
       <Footer />
