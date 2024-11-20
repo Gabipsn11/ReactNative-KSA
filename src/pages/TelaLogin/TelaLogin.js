@@ -11,7 +11,7 @@ const TelaLogin = ({ navigation }) => {
   };
 
   const handleLogin = () => {
-    navigation.navigate('NextScreen');
+    navigation.navigate('Telaturmas');
   };
 
   return (
