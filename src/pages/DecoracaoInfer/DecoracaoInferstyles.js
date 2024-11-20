@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   imageContainer: {
-    marginTop: -40,
+    marginTop: '10%',
     height: 195,
-    marginLeft: -150,
+    marginLeft: '-40%',
   },
   image: {
     width: '100%',
