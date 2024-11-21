@@ -130,8 +130,8 @@ const TelaLogin = ({ navigation }) => {
               resizeMode="contain"
             />
           </View>
+          <Footer />
         </ScrollView>
-        <Footer />
       </View>
     </>
   );
