@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, Image, FlatList } from 'react-native';
 import fetchData from "../api/comunicadosApi";
-import styles from './MessageCardStyles';
+import styles from '../styles/MessageCardStyles';
 
 const MessageCard = ({ turmaid }) => {
   const [dadosApi, setDadosApi] = useState([]);

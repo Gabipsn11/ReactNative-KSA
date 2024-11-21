@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StatusBar } from 'react-native';
+import styles from './ComunicadoScreenStyles';
 import Header from '../components/Header';
 import MessageCard from '../components/MessageCard';
 import { Seta, BgEffect } from '../assets/img';
-import styles from './ComunicadoScreenStyles';
 import fetchData from "../api/TurmasApi";
 
 const ComunicadoScreen = ({ turmaid = '67365397f7dd299b547cdb9d' }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import styles from '../styles/HeaderStyles';
+import styles from './HeaderStyles';
 
 const Header = () => {
   return (
