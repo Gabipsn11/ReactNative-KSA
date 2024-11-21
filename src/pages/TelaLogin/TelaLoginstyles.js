@@ -9,27 +9,27 @@ export const styles = StyleSheet.create({
     position: 'relative',
   },
   content: {
-    paddingTop: height * 0.02, // 2% da altura da tela
-    paddingBottom: height * 0.06, // 6% da altura da tela
+    paddingTop: height * 0.02, 
+    paddingBottom: height * 0.06, 
   },
   triangleContainer: {
     alignItems: 'center',
-    marginTop: height * -0.035, // -3.5% da altura da tela
+    marginTop: height * -0.035, 
   },
   triangle: {
-    width: width * 0.5, // 50% da largura da tela
-    height: height * 0.25, // 25% da altura da tela
+    width: width * 0.5, 
+    height: height * 0.25, 
     position: 'absolute',
-    top: height * -0.09, // -9% da altura da tela
-    left: width * -0.1, // -10% da largura da tela
+    top: height * -0.09, 
+    left: width * -0.11, 
   },
   textContainer: {
-    marginTop: height * 0.16, // 16% da altura da tela
+    marginTop: height * 0.16, 
     alignItems: 'center',
     justifyContent: 'center',
   },
   helloText: {
-    fontSize: width * 0.06, // 6% da largura da tela
+    fontSize: width * 0.06, 
     fontWeight: 'bold',
     color: '#021320',
     borderBottomWidth: 4,
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'Open Sans Semi Bold',
   },
   welcomeText: {
-    fontSize: width * 0.06, // 6% da largura da tela
+    fontSize: width * 0.06, 
     fontWeight: 'bold',
     color: '#021320',
     fontFamily: 'Open Sans Semi Bold',
@@ -46,53 +46,54 @@ export const styles = StyleSheet.create({
   subText: {
     color: '#A8A8A8',
     fontFamily: 'Open Sans',
-    fontSize: width * 0.035, // 3.5% da largura da tela
+    fontSize: width * 0.035, 
     fontWeight: '600',
-    lineHeight: width * 0.045, // 4.5% da largura da tela
-    marginTop: height * 0.025, // 2.5% da altura da tela
+    lineHeight: width * 0.045, 
+    marginTop: height * 0.025, 
     textAlign: 'center',
   },
   questionText: {
-    marginTop: height * 0.034, // 3.4% da altura da tela
-    fontSize: width * 0.035, // 3.5% da largura da tela
+    marginTop: height * 0.034, 
+    fontSize: width * 0.035, 
     fontFamily: 'Open Sans Semi Bold',
     fontWeight: '600',
     color: '#000',
-    left: width * 0.05, // 5% da largura da tela
+    left: width * 0.05, 
   },
   asterisk: {
     color: '#FF0606',
   },
   imagesContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: height * 0.03, // 3% da altura da tela
+    justifyContent: 'space-around', 
+    marginTop: height * 0.03, 
   },
   circleWithText: {
     alignItems: 'center',
+    marginHorizontal: width * 0.02, 
   },
   circleWrapper: {
-    width: width * 0.24, // 24% da largura da tela
-    height: width * 0.24, // 24% da largura da tela
-    borderRadius: (width * 0.24) / 2, // 50% do tamanho do cÃ­rculo
+    width: width * 0.24, 
+    height: width * 0.24, 
+    borderRadius: (width * 0.24) / 2, 
     justifyContent: 'center',
     alignItems: 'center',
   },
   circleImage: {
-    width: width * 0.2, // 20% da largura da tela
-    height: height * 0.1, // 10% da altura da tela
-    borderRadius: (width * 0.2) / 2, // 50% do tamanho da imagem
+    width: width * 0.2, 
+    height: height * 0.1, 
+    borderRadius: (width * 0.2) / 2, 
   },
   selectedOption: {
     borderWidth: 3,
     borderColor: '#5A9BD5',
   },
   optionTextWrapper: {
-    marginTop: height * 0.01, // 1% da altura da tela
+    marginTop: height * 0.01, 
     alignItems: 'center',
   },
   optionText: {
-    fontSize: width * 0.03, // 3% da largura da tela
+    fontSize: width * 0.03, 
     fontFamily: 'Open Sans Semi Bold',
     fontWeight: '700',
     color: '#000',
@@ -102,8 +103,8 @@ export const styles = StyleSheet.create({
   },
   imageContainer: {
     marginTop: '10%',
-    height: height * 0.25, // 25% da altura da tela
-    marginLeft: width * -0.4, // 40% da largura da tela
+    height: height * 0.25, 
+    marginLeft: width * -0.4, 
   },
   image: {
     width: '100%',
@@ -111,7 +112,7 @@ export const styles = StyleSheet.create({
   },
   footer: {
     width: '100%',
-    height: height * 0.065, // 6.5% da altura da tela
+    height: height * 0.065, 
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#03395F',
