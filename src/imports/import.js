@@ -1,6 +1,3 @@
-import Welcome from '../pages/Welcome/Welcome';
-import Question from '../pages/Question/Question';
-import DecoracaoInfer from '../pages/DecoracaoInfer/DecoracaoInfer';
 import TelaLogin from '../pages/TelaLogin/TelaLogin'; 
 import TelaTurmas from '../pages/TelaTurmas/TelaTurmas';
 
@@ -12,9 +9,7 @@ export {
   Form,
   Footer,
   Header,
-  Welcome,
-  Question,
-  DecoracaoInfer,
+
   TelaLogin,
   TelaTurmas
 };
