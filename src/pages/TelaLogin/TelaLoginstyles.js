@@ -10,13 +10,16 @@ export const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 60,
   },
+  triangleContainer: {
+    alignItems: 'center',
+    marginTop: -35,
+  },
   triangle: {
     width: 189,
     height: 201,
     position: 'absolute',
-    top: -80,
+    top: -90,
     left: -40,
-    marginTop: 80,
   },
   textContainer: {
     marginTop: 160,

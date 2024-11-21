@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
+import { View, ScrollView, Text, Image, TouchableOpacity, ViewComponent } from 'react-native';
 import { Header, Footer, Form, DecoracaoInfer } from '../../imports/import'; 
-import { styles } from './TelaLoginstyles'; 
+import { styles } from './TelaLoginstyles';
 
 const TelaLogin = ({ navigation }) => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -15,15 +15,16 @@ const TelaLogin = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
-     
-        <Image
+    <>
+   <View style={styles.container}>
+      <Header title="KSA" />
+      <ScrollView contentContainerStyle={styles.content}>
+      <View style={styles.triangleContainer}>
+      <Image
         source={require('../../assets/triangulo.png')}
         style={styles.triangle}
-        resizeMode="contain" />
-
-       <Header title="KSA" />
-      <ScrollView contentContainerStyle={styles.content}>
+        resizeMode="contain"/>
+        </View>
         <View style={styles.textContainer}>
           <Text style={styles.helloText}>
 
@@ -126,6 +127,7 @@ const TelaLogin = ({ navigation }) => {
       </ScrollView>
       <Footer />
     </View>
+    </>
   );
 };
 
