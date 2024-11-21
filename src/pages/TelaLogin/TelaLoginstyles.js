@@ -114,5 +114,4 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#03395F',
   },
-  
 });
