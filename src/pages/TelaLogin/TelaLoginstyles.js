@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     height: height * 0.25, 
     position: 'absolute',
     top: height * -0.13, 
-    left: width * -0.10, 
+    left: width * -0.11, 
   },
   textContainer: {
     marginTop: height * 0.16, 
